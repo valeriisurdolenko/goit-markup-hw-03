@@ -31,7 +31,9 @@ button {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -55,9 +57,6 @@ body {
 }
 /* HEADER */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-
   border-bottom: 1px solid #ececec;
 }
 .header-logo {
@@ -68,7 +67,10 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
 
+  display: block;
   margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .logo {
@@ -99,6 +101,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-link:hover,
@@ -124,6 +130,10 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--first-text-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-list {
@@ -277,12 +287,16 @@ body {
   width: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  padding-bottom: 30px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-cards {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-title {
@@ -303,7 +317,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--second-title-color);
 
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -318,7 +331,7 @@ body {
 /* PORTFOLIO */
 
 .portfolio {
-  padding-top: 62px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -349,6 +362,8 @@ body {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+
+  padding: 6px 22px;
 }
 
 .project-list {
@@ -363,19 +378,17 @@ body {
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-
-  background: #ffffff;
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
 }
 
-/* .project-img {
-  max-width: 100%;
-} */
-
 .project-item-content {
-  width: 322px;
-  margin: 20px 24px;
+  width: 370px;
+  padding: 20px 24px;
+
+  background: #ffffff;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .project-title {
